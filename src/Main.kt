@@ -34,13 +34,15 @@ fun construirAcuarioV4() {
     acuario.volumen = 70
     acuario.imprimirTamano()
 }
+fun crearPeces() {
+    val tiburon = Tiburon()
+    val pezPayaso = PezPayaso()
+
+    println("Tiburón: ${tiburon.color}")
+    println("Pez Payaso: ${pezPayaso.color}")
+}
 
 fun main() {
-    println("=== Acuario Rectangular ===")
-    val acuario = Acuario(ancho = 25, largo = 25, alto = 40)
-    acuario.imprimirTamano()
-
-    println("\n=== Acuario Torre ===")
-    val torre = TanqueTorre(diametro = 25, alto = 40)
-    torre.imprimirTamano()
+    crearPeces()
 }
+
